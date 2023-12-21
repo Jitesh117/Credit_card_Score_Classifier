@@ -75,7 +75,7 @@ After training various models on the Dataset, I came to the following conclusion
 | LightGBM | 69.750  |
 | SVC      | 69.435  |
 
-![Alt text](./plots/model_success_rates.png)
+<img src = "./plots/model_success_rates.png" alt = "Pair Plot" width = "600"/>
 
 ## Results
 |           | Precision | Recall | F1-Score | Support |
