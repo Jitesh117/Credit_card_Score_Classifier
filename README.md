@@ -3,6 +3,9 @@
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Data Cleaning and handling Missing values](#data-cleaning-and-handling-missing-values)
+- [EDA](#eda)
+  - [BoxPlot of Numeric Columns](#boxplot-of-numeric-columns)
+  - [PairPlot of Payment\_Behavior against other important features](#pairplot-of-payment_behavior-against-other-important-features)
 - [Outlier Detection and Removal](#outlier-detection-and-removal)
 - [How I dealt with un-balanced Distribution](#how-i-dealt-with-un-balanced-distribution)
 - [Model Selection](#model-selection)
@@ -40,6 +43,14 @@
 - As can be seen from the above table, there were too many inconsistencies and errors in the dataset which had to be cleaned
 - To tackle data cleaning, I created custom functions to efficiently clean both the numerical and categorical columns.
 
+## EDA
+The insights gleaned from the pivot tables highlight key findings from this comprehensive analysis.
+### BoxPlot of Numeric Columns
+<img src = "./plots/numeric_boxplot.png" alt = "Pair Plot" width = "600"/>
+
+### PairPlot of Payment_Behavior against other important features
+<img src = "./plots/pairplot.png" alt = "Pair Plot" width = "600"/>
+
 ## Outlier Detection and Removal
 | Before | After |
 |--------|-------|
@@ -63,6 +74,8 @@ After training various models on the Dataset, I came to the following conclusion
 | XGB      | 72.745  |
 | LightGBM | 69.750  |
 | SVC      | 69.435  |
+
+![Alt text](./plots/model_success_rates.png)
 
 ## Results
 |           | Precision | Recall | F1-Score | Support |
